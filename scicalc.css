@@ -1,0 +1,117 @@
+body{
+    background-color: lightgray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
+    }
+
+form{
+    
+    background-color: lightgrey;
+    width: 315px;
+    border: 25px outset darkslategrey;
+    border-radius: 15px;
+    padding:10px;
+    margin: auto;
+    }
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size:30px;
+    padding-left: 450px;
+    color: darkslategray;
+}
+
+.display{
+    font-family: Courier New, Courier, monospace;
+    font-size: 18px;
+    border: 0;
+    height: 50px;
+    width: 315px;
+    background-color:darkgray;
+}
+.output{
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.button{
+    height: 50px;
+    width: 50px;
+    border-radius: 7px;
+ }
+
+.sci{
+    color:floralwhite;
+    background-color:dimgrey;
+    font-size: 10px;
+}
+
+.sci:hover{
+    color: papayawhip;
+    background-color: black;
+}
+
+.func{
+    color:floralwhite;
+    background-color:dimgrey;
+    font-size: 10px;
+}
+
+.func:hover{
+    color: papayawhip;
+    background-color: black;
+}
+
+
+.no{
+    color: papayawhip;
+    background-color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:15px;
+}
+
+.no:hover {
+    color:floralwhite;
+    background-color:dimgrey;
+}
+
+.bbutton{
+    height: 50px;
+    width: 100px;
+    background-color:darkorange;
+    border-radius: 7px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:15px ;
+}
+
+.bbutton:hover{
+    color:black;
+    background-color:orange;
+}
+
+.erase{
+    color:black;
+    background-color:darkgoldenrod;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:15px ;
+}
+.erase:hover{
+    color:black;
+    background-color:goldenrod;
+}
+
+.dummy{
+    background-color: lightgray;
+    border: 0;
+    height: 15px;    
+}
+
+footer{
+    position: fixed;
+	bottom:0;
+	padding-left:620px;
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+}   

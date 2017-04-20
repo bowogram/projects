@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="scicalc.css">
+    <script src="scicalc.js"></script>
+    <title>BOWO'S SCI-CALC</title>
+
+    <h1>BOWO'S SCIENTIFIC CALCULATOR</h1>
+
+    <FORM NAME="sci-calc">
+
+        <div>
+            <INPUT NAME="display" class="display" VALUE="0" MAXLENGTH="30" >
+            <INPUT NAME="output" class="display output" VALUE="" MAXLENGTH="30">
+        </div>
+        <br />
+
+        <INPUT TYPE="button" class="button func" VALUE="Cos(x)"  ONCLICK="if (checkNum(this.form.display.value)) { cos(this.form) }" TITLE ='returns the cosine of x'>
+        <INPUT TYPE="button" class="button func" VALUE="Sin(x)"  ONCLICK="if (checkNum(this.form.display.value)) { sin(this.form) }" TITLE ='returns the sine of x'>
+        <INPUT TYPE="button" class="button func" VALUE="Tan(x)"  ONCLICK="if (checkNum(this.form.display.value)) { tan(this.form) }" TITLE ='returns the tangent of x'>
+        <INPUT TYPE="button" class="button func" VALUE="aCos(x)" ONCLICK="if (checkNum(this.form.display.value)) { acos(this.form) }" TITLE ='returns the arccosine of x'>
+        <INPUT TYPE="button" class="button func" VALUE="aSin(x)" ONCLICK="if (checkNum(this.form.display.value)) { asin(this.form) }" TITLE ='returns the arcsine of x'>
+        <INPUT TYPE="button" class="button func" VALUE="aTan(x)" ONCLICK="if (checkNum(this.form.display.value)) { atan(this.form) }" TITLE ='returns the arctangent of x'>
+        <br />
+
+        <INPUT TYPE="button" class="button sci" VALUE="e^x" ONCLICK="if (checkNum(this.form.display.value)) { exp(this.form) }">
+        <INPUT TYPE="button" class="button sci" VALUE=" X! " ONCLICK="if (checkNum(this.form.display.value)) { fac(this.form) }" TITLE ='returns the factorial of x'>
+        <INPUT TYPE="button" class="button func" VALUE="sqrt(x)" ONCLICK="if (checkNum(this.form.display.value)) { sqrt(this.form) }" TITLE ='returns the squareroot of x'>
+        <INPUT TYPE="button" class="button sci" VALUE=" PI  " ONCLICK="addChar(this.form.display, '3.141')"  TITLE ='returns the value of PI'>
+        <INPUT TYPE="button" class="button sci" VALUE=" x^2 " ONCLICK="if (checkNum(this.form.display.value)) { square(this.form) }" TITLE ='returns the square of x'>
+        <INPUT TYPE="button" class="button sci" VALUE=" x^3 " ONCLICK="if (checkNum(this.form.display.value)) { cube(this.form) }" TITLE ='returns the cube of x'>
+        <br />
+
+        <INPUT TYPE="button" class="button func" VALUE="Ln(x)" ONCLICK="if (checkNum(this.form.display.value)) { ln(this.form) }" TITLE ='returns the natural logarithm (base E) of x'>
+        <INPUT TYPE="button" class="button func" VALUE="Log(x)" ONCLICK="if (checkNum(this.form.display.value)) { log10(this.form) }" TITLE ='returns the natural logarithm of x'>
+        <INPUT TYPE="button" class="button sci" VALUE="  10^x " ONCLICK="if (checkNum(this.form.display.value)) { pow10(this.form) }">
+        <INPUT TYPE="button" class="button sci" VALUE="MOD" ONCLICK="addChar(this.form.display, '%')">
+        <INPUT TYPE="button" class="button sci" VALUE="  (  " ONCLICK="addChar(this.form.display, '(')">
+        <INPUT TYPE="button" class="button sci" VALUE="  )   " ONCLICK="addChar(this.form.display, ')')">
+        <br />
+
+        <INPUT TYPE="button" class="dummy">
+        <br />
+
+        <INPUT TYPE="button" class="button no" VALUE="  7  " ONCLICK="addChar(this.form.display, '7')">
+        <INPUT TYPE="button" class="button no" VALUE="  8  " ONCLICK="addChar(this.form.display, '8')">
+        <INPUT TYPE="button" class="button no" VALUE="  9  " ONCLICK="addChar(this.form.display, '9')">
+        <INPUT TYPE="button" class="button no" VALUE="  /  " ONCLICK="addChar(this.form.display, '/')">
+        <INPUT TYPE="button" class="bbutton erase" VALUE="AC" ONCLICK="this.form.display.value = 0; this.form.output.value = '' "  TITLE ='clears the display'>
+        <br />
+
+
+        <INPUT TYPE="button" class="button no" VALUE="  4  " ONCLICK="addChar(this.form.display, '4')">
+        <INPUT TYPE="button" class="button no" VALUE="  5  " ONCLICK="addChar(this.form.display, '5')">
+        <INPUT TYPE="button" class="button no" VALUE="  6  " ONCLICK="addChar(this.form.display, '6')">
+        <INPUT TYPE="button" class="button no" VALUE="  *  " ONCLICK="addChar(this.form.display, '*')">
+        <INPUT TYPE="Button" class="bbutton erase" VALUE="DEL" ONCLICK="deleteChar(this.form.display)" TITLE ='deletes'>
+        <br />
+
+
+        <INPUT TYPE="button" class="button no" VALUE="  1  " ONCLICK="addChar(this.form.display, '1')">
+        <INPUT TYPE="button" class="button no" VALUE="  2  " ONCLICK="addChar(this.form.display, '2')">
+        <INPUT TYPE="button" class="button no" VALUE="  3  " ONCLICK="addChar(this.form.display, '3')">
+        <INPUT TYPE="button" class="button no" VALUE="  -  " ONCLICK="addChar(this.form.display, '-')">
+        <INPUT TYPE="button" class="bbutton" VALUE="=" NAME="enter" ONCLICK="if (checkNum(this.form.display.value)) { compute(this.form) }" TITLE ='calculates'>
+
+
+        <br />
+        <INPUT TYPE="button" class="button no" VALUE="  e  " ONCLICK="addChar(this.form.display, '2.718')"  TITLE ='returns the value of e'>
+        <INPUT TYPE="button" class="button no" VALUE="  0  " ONCLICK="addChar(this.form.display, '0')">
+        <INPUT TYPE="button" class="button no" VALUE="  .  " ONCLICK="addChar(this.form.display, '.')">
+        <INPUT TYPE="button" class="button no" VALUE="  +  " ONCLICK="addChar(this.form.display, '+')">
+        <INPUT TYPE="button" class="bbutton" VALUE=" ANS " ONCLICK="{ ans(this.form) }"  TITLE ='returns the evaluation of your calculaion'>
+                
+        <br />
+
+
+
+
+    </FORM>
+
+    <footer align="center">AYELABOWO &#9400 2017<br /> 140805514 </footer>
+
+    </body>
+
+</html>
